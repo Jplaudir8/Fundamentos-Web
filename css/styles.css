@@ -1,0 +1,305 @@
+font-family: 'Roboto Slab', serif;
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  margin: 0px;
+  box-sizing: inherit;
+}
+
+header {
+  width:100%;
+  height: 146px;
+  background: #323232;
+  float: left;
+}
+
+header img {
+  margin: 20px 0 20px 22px;
+  width: 13%;
+  float: left;
+}
+
+@media screen and (max-width:800px){
+  header img {
+    width: 25%;
+  }
+  header nav {
+    margin: 0;
+  }
+  header nav ul{
+    padding-left: 0;
+  }
+}
+
+nav {
+  float: right;
+  margin: 60px 0px auto 100px;
+}
+
+nav ul {
+  width: 100%;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-right: 55px;
+}
+
+nav ul li a:hover {
+  color: yellow;
+  padding-bottom: 5px;
+  border-bottom: 1px solid yellow;
+}
+
+.content img {
+  width: 100%;
+}
+/*-------------Marcas-------------*/
+section{
+	padding-top: 25px;
+}
+
+#tabla img{
+	height: 200px;
+	width: 200px;
+	border: solid 1px;
+	border-color: #000;
+	box-shadow: 0px 0px 20px 0.1px;
+}
+#tabla th{
+	text-align: center;
+	border-bottom: 3px solid #000;
+	font-weight: bold 120%;
+	font-family: verdana;
+}
+#tabla td{
+	padding: 25px;
+}
+#tabla {
+		margin: 30px auto 0px;
+}
+
+#tabla table {
+	margin-left: 21%;
+}
+
+input[type=submit]{
+	text-align: center;
+	width: 110px;
+	height: 50px;
+	background: #D8D8D8;
+	font-weight: bold;
+	font-family: verdana;
+	margin: 0 auto;
+	display:block;
+ 	margin-left: auto;
+  	margin-right: auto;
+}
+
+#boton form input {
+	margin-bottom: 30px;
+}
+
+#tabla table tr th {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+/*---------------------------------*/
+/*-------------Footer-------------*/
+footer {
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background: #323232;
+  font-size: 0.925em;
+  position: relative;
+}
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	color: white;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 20%;
+}
+
+.footer-distributed .footer-left object embed {
+	width: 60%;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center div p {
+	padding-bottom: 20px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+	width: 40%;
+}
+
+.footer-distributed .footer-right p {
+	padding-bottom: 20px;
+}
+
+.social {
+  display: block;
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  text-align: left;
+  padding-left: 0px;
+}
+
+.social li {
+  display: inline-block;
+  margin: 2px;
+  margin: 0.2rem;
+}
+
+.social a, .social svg {
+  display: block;
+}
+
+.social a {
+  position: relative;
+  height: 25;/*96px;*/
+  height: 2.5rem;/*9.6rem;*/
+  width: 25;/*96px;*/
+  width: 2.5rem;/*9.6rem;*/
+}
+
+.social svg {
+  height: 100%;
+  width: 100%;
+}
+
+.social em {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -0.75em;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.icon-8:hover, .icon-10:hover, .icon-15:hover, .icon-17:hover, .icon-26:hover, .icon-28:hover {
+  border-radius: 20%;
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  /*-webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;*/
+  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.icon-8 { /* email */
+  color: #9C9C9C;
+  fill: #9C9C9C;
+}
+
+.icon-8:hover {
+  fill: #F2eC00;
+}
+
+.icon-10 { /* facebook */
+  color: #9C9C9C;
+  fill: #9C9C9C;
+}
+
+.icon-10:hover {
+  fill: #3B5998;
+}
+
+.icon-15 { /* instagram */
+  color: #9C9C9C;
+  fill: #9C9C9C;
+}
+
+.icon-15:hover {
+  fill: #bc2a8d;  /*Para Buscadores que no soporten degradado */
+  fill: url(#MyGradient2);
+}
+
+.icon-17 { /* linkedin */
+  color: #9C9C9C;
+  fill: #9C9C9C;
+}
+
+.icon-17:hover {
+  fill: #0077b5;
+}
+
+.icon-26 { /* twitter */
+  color: #9C9C9C;
+  fill: #9C9C9C;
+}
+
+.icon-26:hover {
+  fill: #00aced;
+}
+
+.icon-28 { /* youtube */
+  color: #9C9C9C;
+  fill: #9C9C9C;
+}
+
+.icon-28:hover {
+  fill: #cc181e;
+}
+
+@media screen and (max-width: 480px){
+	header ul li a{
+		box-sizing: border-box;
+		width: 100px;
+		padding: 15px;
+	}
+	section table{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 20px;
+	}
+	body{
+		margin-right: 20px;
+		margin-left: 20px;
+		font-family: verdana;
+		width: 100%;
+	}
+}
