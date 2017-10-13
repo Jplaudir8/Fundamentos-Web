@@ -1,155 +1,207 @@
-font-family: 'Roboto Slab', serif;
+/*Estilos Generales*/
+p {
+  line-height: 1.75; }
 
-html {
-  box-sizing: border-box;
-}
+a {
+  color: #fed136; }
+  a.active, a:active, a:focus, a:hover {
+    color: #fec503; }
 
-*, *:before, *:after {
-  margin: 0px;
-  box-sizing: inherit;
-}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
 
-header {
-  width:100%;
-  height: 146px;
-  background: #323232;
-  float: left;
-}
+::-moz-selection {
+  background: #DF3A01;
+  text-shadow: none; }
 
-header img {
-  margin: 20px 0 20px 22px;
-  width: 13%;
-  float: left;
-}
+::selection {
+  background: #DF3A01;
+  text-shadow: none; }
 
-@media screen and (max-width:800px){
-  header img {
-    width: 25%;
-  }
-  header nav {
-    margin: 0;
-  }
-  header nav ul{
-    padding-left: 0;
-  }
-}
+img::selection {
+  background: transparent; }
 
-nav {
-  float: right;
-  margin: 60px 0px auto 100px;
-}
+img::-moz-selection {
+  background: transparent; }
 
-nav ul {
-  width: 100%;
-}
+body {
+  -webkit-tap-highlight-color: #fed136; }
 
-nav ul li {
-  list-style: none;
-  display: inline-block;
-}
+section {
+  padding: 50px 0; }
+  section h2.section-heading {
+    font-size: 30px;
+    text-transform: none;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 15px; }
+    section h2 span.span-1, section h3 span.span-1 {
+    font-weight: 900; }
+  section h3.section-subheading {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-transform: none;
+    text-align: center;
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  section h3.text-sub-heading {
+    color: #B43104; }
 
-nav ul li a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  margin-right: 55px;
-}
+@media (min-width: 768px) {
+  section {
+    padding: 50px 0; } }
+    
+/*Estilos Barra de Navegación*/
 
-nav ul li a:hover {
-  color: yellow;
-  padding-bottom: 5px;
-  border-bottom: 1px solid yellow;
-}
+#mainNav {
+  background-color:#2d2d30; 
+  opacity:0.9; }
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: #fed136;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+  #mainNav .navbar-brand {
+    color: #fed136;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
+    #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+      color: #fec503; }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    padding: 0.75em 0;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+    #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+      color: #fed136; }
 
-.content img {
-  width: 100%;
-}
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent; }
+    #mainNav .navbar-brand {
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+    #mainNav .navbar-nav .nav-item .nav-link {
+      padding: 1.1em 1em !important; }
+    #mainNav.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: #222222; }
+      #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0; } }
 
-.carac-wrapper {
-  background-color: white;
-  height: 400px;
-  width: 100%;
+.logo {
+  width: 130px; }
 
-}
+#mainNav .navbar-toggler {
+  background-color: #DF3A01; }
 
-.carac-wrapper h3 {
-  width: 100%;
-  padding: 30px 0px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-}
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-weight: bold; }
 
-.carac-wrapper ul {
-  padding: 120px 0px 80px;
-  width: 79%;
-  margin: 0px auto;
-}
+/*Estilos Slides*/
 
-.carac-wrapper ul li {
-  width: 12%;
-  list-style: none;
-  display: inline-block;
-  margin: 0px 6%;
-  text-align: center;
-}
+.carousel-inner img {
+width: 100%;
+max-width: 100%; 
+margin: auto;
+height: auto;}
 
-.carac-wrapper #c1:before {
-  position: relative;
-  float: left;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: -40px;
-  content: "CONFIANZA";
-  text-align: center;
-}
+.carousel-item {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
 
-.carac-wrapper #c2:before {
-  position: relative;
-  float: left;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: -40px;
-  content: "SEGURIDAD";
-  text-align: center;
-}
 
-.carac-wrapper #c3:before {
-  position: relative;
-  float: left;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: -40px;
-  content: "EXCELENCIA";
-  text-align: center;
-}
+header .descripcion .intro-text {
+  padding-top: 150px;
+  padding-bottom: 100px; }
+  header .descripcion .intro-text .intro-lead-in {
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+    margin-bottom: 25px;      
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  header .descripcion .intro-text .intro-heading {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
 
-.carac-wrapper #c4:before {
-  position: relative;
-  float: left;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: -40px;
-  content: "PRIVILEGIOS";
-  text-align: center;
-}
+@media (min-width: 768px) {
+  header .descripcion .intro-text {
+    padding-top: 300px;
+    padding-bottom: 10px; }
+    header .descripcion .intro-text .intro-lead-in {
+      font-size: 20px;
+      font-style: italic;
+      line-height: 40px;
+      margin-bottom: 0px;
+      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    header .descripcion .intro-text .intro-heading {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 75px;
+      margin-bottom: 40px;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-transform: uppercase; } }
 
-.carac-wrapper ul li img {
-  width: 100%;
-  border-radius: 50%;
-  border: 1.5px solid black;
-}
+.btn-info {
+    color: #fff;
+    background-color: transparent;
+    border-width: 1.5px;
+    border-color: #007bff;
+    width: 100px;}
 
-/**************************************/
-/*EMPRESA RECONOCIDA A NIVEL NACIONAL*/
-/**************************************/
+.btn-info:hover {
+    background-color: #B43104;}
+
+/*Estilos Sección Características*/
+
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+  font-weight: 600; }
+
+.text-primary {
+  color: #086A87 !important; }
+
+section#caracteristicas, section#marca{
+  background-color: #D8D8D8 !important; }
+
+.text-muted {
+  color: #0B2F3A !important;
+  text-align: justify; }
+
+/*Empresa Reconocida A Nivel Nacional*/
 
 .wrapper-pista {
     background-image: url('../img/camino.jpg');
@@ -160,10 +212,8 @@ nav ul li a:hover {
     background-size: auto auto;
     box-shadow: inset 0px 0px 800px 90px black;
     width: 100%;
-    height: 460px;
-    min-height: 460px;
-
-}
+    height: 400px;
+    min-height: 400px; }
 
 .wrapper-pista h3 {
   position: relative;
@@ -173,354 +223,256 @@ nav ul li a:hover {
   padding: 0px 25px;
   transform: translate(-50%, -50%);
   color: white;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 2.5em;
-  text-transform: uppercase;
-}
+  text-align: center; }
 
-/**************************************/
-/*Ven...*/
-/**************************************/
+/*Estilos Sección Marcas de Auto*/
 
-.marcas {
-    width:200px;
-    height:600px;
-    position:relative;
-    width: 100%;
-    background-color: #B8B8B8;
-}
-.wrapper-marcas-slogan {
-    position:absolute;
-    width:88%;
-    height:400px;
-    top:50%;
-    margin-top:-250px;
-    left:50%;
-    margin-left:-45%;
-}
-
-.wrapper-marcas-slogan h4 {
-    font-weight: normal;
-    padding-top: 15px;
-}
-
-#marcas-lista {
-    width: 100%;
-    margin: 70px 3%;
-    padding-left: 0px;
-}
-
-#marcas-lista li {
-  width: 14%;
-  list-style: none;
-  display: inline-block;
-  margin: 0px 4%;
-}
-
-#marcas-lista li a img {
-  width: 100%;
-  border: 1.5px solid black;
-}
-
-.btn-mostrar-mas {
-  width: 120px;
-  color: #4A4A4A;
-  background-color: #D8D8D8;
-  margin: 0px auto;
-  text-align: center;
-  box-shadow: 0px 0px 10px 2px;
-  border-radius: 8px;
-}
-
-.btn-mostrar-mas a {
-  text-decoration: none;
-  color: black;
-}
-
-.btn-mostrar-mas p {
-  padding: 10px 0px;
-}
-
-/**************************************/
-/*contacto*/
-/**************************************/
-.contacto {
-  height: 600px;
-  width: 100%;
-  background-color: #6E6E6E;
-  position: relative;
-  z-index: 1;
-}
-
-.contacto .wrapper-contacto {
-  width: 90%;
-  height: 600px;
-  padding: 5% 0px 0px 8%;
-}
-
-.contacto .wrapper-contacto div {
-  min-height: 420px;
-  padding: 10px;
-  margin: 10px;
-}
-
-.contacto .wrapper-contacto .col-1 {
-  float: left;
-  width: 40%;
-}
-
-.contacto .wrapper-contacto .col-2 {
-  width: 40%;
-  text-align: center;
-  float: right;
-}
-
-.contacto .wrapper-contacto .col-2 img {
-  width: 100%;
-}
-
-@media screen and (max-width: 800px){
-  .col-1 {
-  float: none;
-  margin: 0;
-  width: 100%;
-  height: 220px;
-  }
-
-  .col-2 {
-  margin: 0;
-  text-align: left;
-  }
-
-  .contacto {
-    width: 100%;
-    height: 880px;
-  }
-
-}
-
-.contacto h3 {
-  margin-bottom: 50px;
-}
-
-.left {
-  float: left;
-  clear: both;
-  width: 40%;
-}
-
-.right {
-  float: right;
-  clear: both;
-  width: 40%;
-}
-
-/******************************************/
-/*Agregando borde diagonal al div contacto*/
-/******************************************/
-
-.contacto:before {
-  background-color: #6E6E6E;
-  content: '';
-  height: 40%;
-  left: 0;
-  position: absolute;
+#marca .marca-item {
   right: 0;
-  z-index: -1;
-  top: 0;
-  -moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(-3deg);
-  -o-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(-3deg);
-	-ms-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(-3deg);
-  transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(-3deg);;
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-backface-visibility: hidden;
-}
+  margin: 0 0 15px; }
+  #marca .marca-item .marca-link {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    cursor: pointer; }
+    #marca .marca-item .marca-link .marca-hover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      transition: all ease 0.5s;
+      opacity: 0;
+      background: #F7D358; }
+      #marca .marca-item .marca-link .marca-hover:hover {
+        opacity: 0.8; }
+      #marca .marca-item .marca-link .marca-hover .marca-hover-content {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 20px;
+        margin-top: -12px;
+        text-align: center;
+        color: white; }
+        #marca .marca-item .marca-link .marca-hover .marca-hover-content i {
+          margin-top: -12px; }
+        #marca .marca-item .marca-link .marca-hover .marca-hover-content h3,
+        #marca .marca-item .marca-link .marca-hover .marca-hover-content h4 {
+          margin: 0; }
+  #marca .marca-item .marca-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #A4A4A4; }
+    #marca .marca-item .marca-caption h5 {
+      margin: 0;}
+    #marca .marca-item .marca-caption p {
+      font-size: 16px;
+      font-style: italic;
+      margin: 0;
+      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+#marca * {
+  z-index: 2; }
+
+@media (min-width: 767px) {
+  #marca .marca-item {
+    margin: 0 0 30px; } }
+
+.marca-modal .modal-dialog {
+  max-width: none;
+  height: 100%;
+  margin: 0; }
+
+.marca-modal .modal-content {
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  .marca-modal .modal-content h2 {
+    font-size: 3em;
+    margin-bottom: 15px; }
+  .marca-modal .modal-content p {
+    margin-bottom: 30px; }
+  .marca-modal .modal-content p.item-intro {
+    font-size: 16px;
+    font-style: italic;
+    margin: 20px 0 30px;
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  .marca-modal .modal-content ul.list-inline {
+    margin-top: 0;
+    margin-bottom: 30px; }
+  .marca-modal .modal-content img {
+    margin-bottom: 30px; }
+  .marca-modal .modal-content button {
+    cursor: pointer; }
+
+.marca-modal .close-modal {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  background-color: transparent; }
+  .marca-modal .close-modal:hover {
+    opacity: 0.3; }
+  .marca-modal .close-modal .lr {
+    /* Safari and Chrome */
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #222222; }
+    .marca-modal .close-modal .lr .rl {
+      /* Safari and Chrome */
+      z-index: 1052;
+      width: 1px;
+      height: 75px;
+      /* IE 9 */
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      background-color: #222222; }
+
+.marca-modal .modal-backdrop {
+  display: none;
+  opacity: 0; }
+
+.center-txt {
+  text-align: center; }
+
+.btn-marca {
+    color: #fff;
+    background-color: #0c5984;
+    border-radius: 50px;
+    width: 200px;
+    font-weight: bold; }
+
+.btn-marca:hover {
+    background-color: #045FB4;
+    color: #fff; 
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out; }
+
+/*Estilos Sección Contacto*/
+
+.fa-size {
+  font-size: 1em; }
+
+.color-circle {
+  color: #DF013A!important;  }
+
+section h2.margin {
+    margin-bottom: 40px; }
+
+section#contacto {
+  background-image: url("../img/canvas-fibra1.png");
+  background-repeat: repeat;
+  background-position: center; }
+  section#contacto .section-heading {
+    color: white; }
+  section#contacto .form-group {
+    margin-bottom: 25px; }
+    section#contacto .form-group input,
+    section#contacto .form-group textarea {
+      padding: 15px; }
+    section#contacto .form-group input.form-control {
+      height: 48px; }
+    section#contacto .form-group select.form-control {
+    height: 48px; }
+    section#contacto .form-group iframe.mapa {
+      width: 100%;
+      height: 270px;
+      frameborder: 0;
+      border: 0; }
+  section#contacto .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none; }
+  section#contacto ::-webkit-input-placeholder {
+    font-weight: 700;
+    color: #BDBDBD;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+    /* Firefox 18- */
+  section#contacto :-moz-placeholder {
+    font-weight: 700;
+    color: #BDBDBD;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+    /* Firefox 19+ */
+  section#contacto ::-moz-placeholder {
+   font-weight: 700;
+    color: #BDBDBD;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+    /* Internet Explorer-Microsoft Edge*/
+  section#contacto :-ms-input-placeholder {
+    font-weight: 700;
+    color: #BDBDBD;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+
+/*Estilos Pie de Página*/
 
 footer {
-  bottom: 0;
-  left: 0;
+  padding: 25px 0;
   text-align: center;
-  width: 100%;
-  background: #323232;
-  font-size: 0.925em;
-  position: relative;
-}
-
-.footer-distributed{
-	background-color: #292c2f;
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	color: white;
-	padding: 55px 50px;
-}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-	width: 20%;
-}
-
-.footer-distributed .footer-left object embed {
-	width: 60%;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-	width: 35%;
-}
-
-.footer-distributed .footer-center div p {
-	padding-bottom: 20px;
-}
-
-/* Footer Right */
-
-.footer-distributed .footer-right {
-	width: 40%;
-}
-
-.footer-distributed .footer-right p {
-	padding-bottom: 20px;
-}
-
-.social {
-  display: block;
-  font-size: 0;
-  list-style: none;
-  margin: 0;
-  text-align: left;
-  padding-left: 0px;
-}
-
-.social li {
-  display: inline-block;
-  margin: 2px;
-  margin: 0.2rem;
-}
-
-.social a, .social svg {
-  display: block;
-}
-
-.social a {
-  position: relative;
-  height: 25;/*96px;*/
-  height: 2.5rem;/*9.6rem;*/
-  width: 25;/*96px;*/
-  width: 2.5rem;/*9.6rem;*/
-}
-
-.social svg {
-  height: 100%;
-  width: 100%;
-}
-
-.social em {
-  font-size: 14px;
-  line-height: 1.5;
-  margin-top: -0.75em;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.icon-8:hover, .icon-10:hover, .icon-15:hover, .icon-17:hover, .icon-26:hover, .icon-28:hover {
-  border-radius: 20%;
-  -webkit-transform: scale(1.25);
-  transform: scale(1.25);
-  /*-webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
-  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
-  transition: background-color 0.5s, transform 0.5s ease-out;*/
-  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
-}
-
-.icon-8 { /* email */
-  color: #9C9C9C;
-  fill: #9C9C9C;
-}
-
-.icon-8:hover {
-  fill: #F2eC00;
-}
-
-.icon-10 { /* facebook */
-  color: #9C9C9C;
-  fill: #9C9C9C;
-}
-
-.icon-10:hover {
-  fill: #3B5998;
-}
-
-.icon-15 { /* instagram */
-  color: #9C9C9C;
-  fill: #9C9C9C;
-}
-
-.icon-15:hover {
-  fill: #bc2a8d;  /*Para Buscadores que no soporten degradado */
-  fill: url(#MyGradient2);
-}
-
-.icon-17 { /* linkedin */
-  color: #9C9C9C;
-  fill: #9C9C9C;
-}
-
-.icon-17:hover {
-  fill: #0077b5;
-}
-
-.icon-26 { /* twitter */
-  color: #9C9C9C;
-  fill: #9C9C9C;
-}
-
-.icon-26:hover {
-  fill: #00aced;
-}
-
-.icon-28 { /* youtube */
-  color: #9C9C9C;
-  fill: #9C9C9C;
-}
-
-.icon-28:hover {
-  fill: #cc181e;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.social {
-		text-align: center;
-	}
-
-}
+  background-color: #D8D8D8; }
+  footer .margin-auto {
+    margin-bottom: auto;
+    margin-top: auto; }
+  footer .margin-auto p {
+    line-height: 1; }
+  footer .margin-top {
+    margin-top: 20px; }
+  footer img.size {
+    width: 55%; }
+  footer span.copyright {
+    font-size: 90%;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: none;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+  footer h6.footer-heading {
+    margin: 15px 0;
+    font-weight: 600; }
+  footer p.text-info {
+     color: #0B2F3A !important;
+    font-weight: 600; }
+    
+ul.social-buttons {
+  margin-bottom: 0; }
+  ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    background-color: #222222; }
+    ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+      background-color: #B43104;
+      -webkit-transform: scale(1.25);
+      transform: scale(1.25);
+      transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out; }

@@ -1,0 +1,24 @@
+/*Estilos Sección Toyota - Empresa*/
+
+section#toyota {
+	background-color: #F8E6E0; }
+	section#toyota h4.nom-marca {
+	font-size: 30px;
+	color: #6E6E6E;
+	text-decoration: underline; 
+	text-shadow: 1px 1px 1px; }
+		section#toyota h4.nom-marca span {
+		text-decoration: initial; }  
+
+section#modelos {
+	background-color: #fff; }
+	section#modelos h2.section-heading { 
+	text-shadow: 1px 1px 1px; }
+	section#modelos h3.section-subheading {
+	font-style: normal; 
+	font-size: 20px;
+	text-shadow: 1px 1px 1px; }
+
+section.py-5 img {
+	padding-bottom: 15px;
+}
