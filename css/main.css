@@ -42,7 +42,7 @@ section {
     font-weight: 100;
     margin-top: 0;
     margin-bottom: 15px; }
-    section h2 span.span-1, section h3 span.span-1 {
+    section h2 span.span-1, section h3 span.span-1, section p span.span-1 {
     font-weight: 900; }
   section h3.section-subheading {
     font-size: 16px;
@@ -99,6 +99,8 @@ section {
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent; }
+    #mainNav .logo {
+      width: 130px;  }
     #mainNav .navbar-brand {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
@@ -114,8 +116,30 @@ section {
         font-size: 1.25em;
         padding: 12px 0; } }
 
-.logo {
-  width: 130px; }
+@media (max-width: 991px) {
+  #mainNav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none; }
+    #mainNav .logo {
+      width: 100px; }
+    #mainNav .navbar-brand {
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+    #mainNav .navbar-nav .nav-item .nav-link {
+      padding: 1.1em 1em !important; }
+    #mainNav.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: #222222; }
+      #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0; } }
 
 #mainNav .navbar-toggler {
   background-color: #DF3A01; }
@@ -124,12 +148,26 @@ section {
   font-weight: bold; }
 
 /*Estilos Slides*/
+@media (min-width: 651px) {
+  .carousel-inner img {
+  width: 100%;
+  max-width: 100%; 
+  margin: auto;
+  height: auto; } }
 
-.carousel-inner img {
-width: 100%;
-max-width: 100%; 
-margin: auto;
-height: auto;}
+@media (max-width: 650px) {
+  .carousel-inner img {
+  width: 100%;
+  max-width: 100%; 
+  margin: auto;
+  height: 300px; } }
+
+@media (max-width: 344px) {
+  .carousel-inner img {
+  width: 330px;
+  max-width: 100%; 
+  margin: auto;
+  height: 250px; } }
 
 .carousel-item {
     background: no-repeat center center scroll;
@@ -137,7 +175,6 @@ height: auto;}
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
 
 header .descripcion .intro-text {
   padding-top: 150px;
@@ -156,7 +193,27 @@ header .descripcion .intro-text {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  header .descripcion .intro-text {
+    padding-top: 300px;
+    padding-bottom: 10px; }
+    header .descripcion .intro-text .intro-lead-in {
+      font-size: 20px;
+      font-style: italic;
+      line-height: 40px;
+      margin-bottom: 0px;
+      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    header .descripcion .intro-text .intro-heading {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 75px;
+      margin-bottom: 40px;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-transform: uppercase; } }
+
+@media (max-width: 991px) {
+  header.head {
+    padding-top: 82px; }
   header .descripcion .intro-text {
     padding-top: 300px;
     padding-bottom: 10px; }

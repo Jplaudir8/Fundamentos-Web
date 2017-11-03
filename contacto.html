@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="Concesionario de autos,Dealer de Autos">
-  	<meta name="keywords" content="autos,toyota,ford,jeep,chevrolet,nissan,sedan,suv,coupe,deportivo">
+  	<meta name="keywords" content="autos, contactenos, central telefónica, reclamos, servicio técnico">
 	<title>Contacto | AUTORACE PERÚ | Tu Mejor Opción</title>
 
 	<!-- Bootstrap Núcleo del CSS -->
@@ -23,6 +23,9 @@
 	<!-- Estilos para la Página-->
 	<link rel="stylesheet" type="text/css" href="css/main.css" >
   <link rel="stylesheet" type="text/css" href="css/contacto.css">
+
+  <!-- Hotjar for http://autorace.azurewebsites.net/ -->
+  <script src="js/hotjar.js"></script>  
 </head>
 
 <body>
@@ -60,8 +63,11 @@
               </div>
             </div>
       </nav>
-  <header>
-        <img class="img-fluid" src="img/subaru2.png" alt="subaru">
+
+  <header class="head">
+    <div class="carousel-inner descripcion">
+      <img class="img-fluid" src="img/subaru2.png" alt="subaru">
+    </div>
   </header>
 
 <!-- Contacto Numeros -->
@@ -115,13 +121,13 @@
           </div>
       </div>
 
-    <form id="form-contacto" action="" method="post">
+    <form id="form-contacto" action="" method="post" name="frm">
           <div class="row">
             <div class="col-md-12">
 
               <fieldset>
                 <label>Razón:</label>
-                <select required autofocus>
+                <select id="razon" name="razon" required autofocus>
                   <option value="">--Seleccione--</option>
                   <option value="Contacto">Contacto</option>
                   <option value="Cotización">Cotización</option>
@@ -138,39 +144,56 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-8">
-              <fieldset>
-                <label>Nombres y Apellidos:</label>
-                <input type="text"required autofocus>
-              </fieldset>
-            </div>
             <div class="col-md-4">
               <fieldset>
-                <label>Correo:</label>
-                <input type="text" required autofocus>
+                <label>Nombres y Apellidos:</label>
+                <input id="nombres" name="nombres" type="text" ng-model="nombres" ng-minlength="5" required>
+                  <span ng-show="frm.nombres.$dirty && frm.nombres.$invalid"></span>
+                  <span class="validacion" ng-show="frm.nombres.$error.required">¡Campo obligatorio!</span>
+                  <span class="validacion" ng-show="frm.nombres.$error.minlength">¡Debe ingresar como mínimo 5 caracteres!</span>
               </fieldset>
-
+            </div>
+            <div class="col-md-4 offset-md-4">
+              <fieldset>
+                <label>Correo:</label>
+                <input id="correo" name="correo" type="email" ng-model="correo" required>
+                <span ng-show="frm.correo.$dirty && frm.correo.$invalid"></span>
+                <span class="validacion" ng-show="frm.correo.$error.required">¡Campo obligatorio!</span>
+                <span class="validacion" ng-show="frm.correo.$error.email">¡La dirección de correo electrónico que has introducido no es válida!</span>
+              </fieldset>
             </div>
           </div>
           <div class="row">
             <div class="col-md-4">
               <fieldset>
                 <label>Teléfono:</label>
-                <input type="text" required autofocus>
+                <input id="telefono" name="telefono" type="tel" ng-model="telefono" ng-minlength="7" ng-maxlength="7" required>
+                <span ng-show="frm.telefono.$dirty && frm.telefono.$invalid"></span>
+                <span class="validacion" ng-show="frm.telefono.$error.required">¡Campo obligatorio!</span>
+                <span class="validacion" ng-show="frm.telefono.$error.minlength">¡Debe ingresar 7 caracteres númericos!</span>
+                <span class="validacion" ng-show="frm.telefono.$error.maxlength">¡Debe ingresar 7 caracteres númericos!</span>
               </fieldset>
 
             </div>
             <div class="col-md-4">
               <fieldset>
                 <label>Celular:</label>
-                <input type="text" required autofocus>
+                <input id="celular" name="celular" type="tel" ng-model="celular" ng-minlength="9" ng-maxlength="9" required>
+                <span ng-show="frm.celular.$dirty && frm.celular.$invalid"></span>
+                <span class="validacion" ng-show="frm.celular.$error.required">¡Campo obligatorio!</span>
+                <span class="validacion" ng-show="frm.celular.$error.minlength">¡Debe ingresar 9 caracteres númericos!</span>
+                <span class="validacion" ng-show="frm.celular.$error.maxlength">¡Debe ingresar 9 caracteres númericos!</span>
               </fieldset>
 
             </div>
             <div class="col-md-4">
               <fieldset>
                 <label>Número de Placa:</label>
-                <input type="text" required autofocus>
+                <input id="placa" name="placa" type="text" ng-model="placa" ng-minlength="7" ng-maxlength="7" required>
+                <span ng-show="frm.placa.$dirty && frm.placa.$invalid"></span>
+                <span class="validacion" ng-show="frm.placa.$error.required">¡Campo obligatorio!</span>
+                <span class="validacion" ng-show="frm.placa.$error.minlength">¡Debe seguir el siguiente formato: APA-027!</span>
+                <span class="validacion" ng-show="frm.placa.$error.maxlength">¡Debe seguir el siguiente formato: APA-027!</span>
               </fieldset>
 
             </div>
@@ -178,7 +201,7 @@
           <div class="row">
             <div class="col-md-12">
               <label>Mensaje:</label>
-              <textarea rows="6">
+              <textarea id="mensaje" name="mensaje" rows="6">
               </textarea>
             </div>
           </div>
@@ -186,8 +209,12 @@
           <div class="col-md-12">
           <fieldset id="radio">
 						<div>
-				    	<span><input type="checkbox" id="chbox1" value="chbox1"></span>Acepto recibir información comercial en el futuro de AutoRace S.A.<br>
-				    	<span><input type="checkbox" id="chbox1" value="chbox1"></span>No deseo recibir información comercial en el futuro de AutoRace salvo la solicitud realizada.<br><br>
+				    	<input type="checkbox" id="terminos" name="terminos" value="chbox1" ng-model="chbox1" required><span>Acepto recibir información comercial en el futuro de AutoRace S.A.</span>
+              <span ng-show="frm.terminos.$dirty && frm.terminos.$invalid"></span>
+              <span class="validacion" ng-show="frm.terminos.$error.required">¡Campo obligatorio!</span>
+              <br>
+              
+				    	<span><input type="checkbox" id="info" value="chbox2"></span>No deseo recibir información comercial en el futuro de AutoRace salvo la solicitud realizada.<br><br>
 				    	<span  class="con2">Los datos que nos facilite nos permitirán gestionar su solicitud. Adicionalmente usted autoriza que AutoRace S.A. trate sus datos personales para el envío por medios postales, telefónicos y electrónicos, información sobre desarrollo de productos, servicios, ofertas, comunicaciones comerciales y promociones especiales que puedan ser de beneficio para usted, salvo que marque la casilla incluida más abajo, que usted no acepta recibir esta información.</span><br><br>
     				</div>
           </fieldset>
@@ -195,7 +222,7 @@
           </div>
 
           <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+            <button  class="btn btn-success btn-md"  name="enviarCorreo" type="submit" id="enviarCorreo" ng-disabled="frm.$invalid" data-submit="...Sending">Enviar</button>
           </fieldset>
 
     </form>
@@ -257,11 +284,11 @@
   <script src="recursos/popper/popper.min.js"></script>
   <script src="recursos/bootstrap/js/bootstrap.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="recursos/jquery-easing/jquery.easing.min.js"></script>
-
   <!-- Scripts personalizado -->
   <script src="js/main.js"></script>
+
+  <!-- Angular JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
 
 </body>
 </html>

@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="Modelos de la Marca Toyota">
   	<meta name="keywords" content="autos, toyota, yaris, corolla, rav4, highlander">
-	<title>Toyota | AUTORACE PERÚ | Tu Mejor Opción</title>
+	<title>Toyota Motor Corporation| AUTORACE PERÚ | Tu Mejor Opción</title>
 
 	<!-- Bootstrap Núcleo del CSS -->
 	<link rel="stylesheet" type="text/css" href="recursos/bootstrap/css/bootstrap.min.css">
@@ -18,11 +18,15 @@
   	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-  	<!-- Estilos para la Página Principal-->
+  <!-- Estilos para la Página Principal-->
 	<link rel="stylesheet" type="text/css" href="css/main.css" >
 
 	<!-- Estilos para la Página Marca Toyota-->
 	<link rel="stylesheet" type="text/css" href="css/marca.css" >
+
+  <!-- Hotjar for http://autorace.azurewebsites.net/ -->
+  <script src="js/hotjar.js"></script>  
+
 </head>
 <body>
 	<!-- Barra de Navegación -->
@@ -63,7 +67,7 @@
 	
 	<!-- Encabezado-Sliders -->
 
-    <header>
+    <header class="head">
             <div id="carousel-1" class="carousel slide" data-ride="carousel">
 
               <!-- Contenedor de los Slide -->
@@ -71,17 +75,17 @@
 
                 <!-- Slide 1 -->
                   <div class="carousel-item active">
-                    <img src="img/toyota-slogan1.png" alt="yaris">
+                    <img src="img/toyota-slogan/toyota-slogan1.png" alt="toyota-slogan1">
                   </div>
 
                 <!-- Slide 2 -->
                   <div class="carousel-item">
-                    <img src="img/toyota-slogan2.png" alt="corolla">
+                    <img src="img/toyota-slogan/toyota-slogan2.png" alt="toyota-slogan2">
                   </div>
                 
                   <!-- Slide 3 -->
                   <div class="carousel-item">
-                    <img src="img/toyota-slogan3.png" alt="land-cruiser">
+                    <img src="img/toyota-slogan/toyota-slogan3.png" alt="toyota-slogan3">
                   </div>
               </div>              
             </div>
@@ -93,32 +97,32 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-              <a href="toyota.html">
+              <a class="clase-actual" href="toyota.html">
                 <img class="img-fluid d-block mx-auto" src="img/minis/toyota-min.png" alt="logo-toyota">
               </a>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-              <a href="toyota.html">
+              <a href="hyundai.html">
                 <img class="img-fluid d-block mx-auto" src="img/minis/hyundai-min.png" alt="logo-hyundai">
               </a>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-              <a href="#">
+              <a href="chevrolet.html">
                 <img class="img-fluid d-block mx-auto" src="img/minis/chevrolet-min.png" alt="logo-chevrolet">
               </a>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-              <a href="#">
+              <a href="kia.html">
                 <img class="img-fluid d-block mx-auto" src="img/minis/kia-min.png" alt="logo-kia">
               </a>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-              <a href="#">
+              <a href="mazda.html">
                 <img class="img-fluid d-block mx-auto" src="img/minis/mazda-min.png" alt="logo-mazda">
               </a>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-              <a href="#">
+              <a href="subaru.html">
                 <img class="img-fluid d-block mx-auto" src="img/minis/subaru-min.png" alt="logo-subaru">
               </a>
             </div>
@@ -128,18 +132,50 @@
 	
 	<!-- Sección Toyota Empresa -->
 
-	<section id="toyota">
+	<section id="biografia">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <h4 class="service-heading nom-marca">Toyota</h4>
             
-            <p class="text-muted"><span class="span-1">¡Toyota Motor Corporation</span> , simplemente llamado Toyota, es un fabricante de automóviles japonés con sede en Toyota (Aichi), Japón.  Toyota ha sido nombrada como la marca de coches más valiosa en 2017 con un valor de marca de 28.700 millones de dólares estadounidenses. Es una de las "tres grandes" empresas automovilísticas japonesas desafiando a los fabricantes de automóviles estadounidenses que también incluye Nissan Motors y Honda Motor con gran éxito. Produce automóviles, camiones, autobuses y robots (no para la venta al público); es la quinta empresa más grande del mundo. La sede de la empresa se encuentra en Toyota, Aichi, y Bunkyō, Tokio (Japón) con fábricas y oficinas alrededor de todo el mundo.
+            <p class="text-muted"><span class="span-1">Toyota Motor Corporation</span> , simplemente llamado Toyota, es un fabricante de automóviles japonés con sede en Toyota <span class="span-1">(Aichi)</span>, Japón.  Toyota ha sido nombrada como la marca de coches más valiosa en 2017 con un valor de marca de 28.700 millones de dólares estadounidenses. Es una de las <span class="span-1">"tres grandes"</span> empresas automovilísticas japonesas desafiando a los fabricantes de automóviles estadounidenses que también incluye Nissan Motors y Honda Motor con gran éxito. Produce automóviles, camiones, autobuses y robots <span class="span-1">(no para la venta al público)</span>; es la quinta empresa más grande del mundo. La sede de la empresa se encuentra en Toyota, Aichi, y Bunkyō, Tokio (Japón) con fábricas y oficinas alrededor de todo el mundo.
             </p>
           </div>
         </div>
       </div>
 	</section>
+
+  <!-- Sección Página Empresa Información -->
+
+  <section class="web">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4 margin-8">
+            <h6 class="sub-heading">MÁS INFORMACIÓN EN: </h6> 
+          </div>
+          <div class="col-md-4">
+            <h6 class="sub-heading">
+              <span class="fa-stack fa-size">
+                <i class="fa fa-circle fa-stack-2x color-circle"></i>
+                <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+              </span>
+
+              <a href="https://www.toyotaperu.com.pe/" target="_blank">www.toyotaperu.com.pe/autos</a>
+            </h6> 
+          </div>
+           <div class="col-md-4">
+            <h6 class="sub-heading">
+              <span class="fa-stack fa-size">
+                <i class="fa fa-circle fa-stack-2x color-circle"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+
+              <a href="https://www.facebook.com/ToyotaPeru/" target="_blank">www.facebook.com/ToyotaPeru</a>
+            </h6>           
+          </div>
+    </div>
+
+  </section>
 	
 	<!-- Sección Modelos Destacados -->
 
@@ -155,14 +191,14 @@
         <div class="row text-center">
           <div class="col-sm-6 col-md-3">
               <a href="#">
-                <img class="img-fluid" src="img/auris.png" alt="auris">
+                <img class="img-fluid" src="img/toyota/yaris.png" alt="yaris">
               </a>
             <h4 class="service-heading">Auris</h4>
           </div>
 
           <div class="col-sm-6 col-md-3">
               <a href="#">
-                <img class="img-fluid" src="img/yaris.png" alt="yaris">
+                <img class="img-fluid" src="img/toyota/auris.png" alt="auris">
               </a>
 
               <h4 class="service-heading">Yaris</h4>
@@ -170,7 +206,7 @@
 
           <div class="col-sm-6 col-md-3">  
               <a href="#">
-                <img class="img-fluid" src="img/rav4.png" alt="rav4">
+                <img class="img-fluid" src="img/toyota/rav4.png" alt="rav4">
               </a>
             <h4 class="service-heading">RAV 4</h4>
             
@@ -178,14 +214,14 @@
 
           <div class="col-sm-6 col-md-3">
               <a href="#">
-                <img class="img-fluid" src="img/86gt.png" alt="86gt">
+                <img class="img-fluid" src="img/toyota/86gt.png" alt="86gt">
               </a>
             <h4 class="service-heading">86-GT</h4>
           </div>
         </div>
       </div>
 	</section>
-	
+
 	<!-- Pie de Página -->
 
 	<footer>
@@ -241,10 +277,7 @@
 	<script src="recursos/popper/popper.min.js"></script>
 	<script src="recursos/bootstrap/js/bootstrap.min.js"></script>
 
-	<!-- Plugin JavaScript -->
-  	<script src="recursos/jquery-easing/jquery.easing.min.js"></script>
-
-  	<!-- Scripts personalizado -->
-  	<script src="js/main.js"></script>
+  <!-- Scripts personalizado -->
+  <script src="js/main.js"></script>
 </body>
 </html>

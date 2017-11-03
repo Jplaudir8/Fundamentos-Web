@@ -1,13 +1,13 @@
 /*Estilos Sección Toyota - Empresa*/
 
-section#toyota {
+section#biografia {
 	background-color: #F8E6E0; }
-	section#toyota h4.nom-marca {
+	section#biografia h4.nom-marca {
 	font-size: 30px;
 	color: #6E6E6E;
 	text-decoration: underline; 
 	text-shadow: 1px 1px 1px; }
-		section#toyota h4.nom-marca span {
+		section#biografia h4.nom-marca span {
 		text-decoration: initial; }  
 
 section#modelos {
@@ -19,6 +19,57 @@ section#modelos {
 	font-size: 20px;
 	text-shadow: 1px 1px 1px; }
 
-section.py-5 img {
-	padding-bottom: 15px;
+section.py-5 {
+	padding-bottom: 20px !important;
+	padding-top: 20px !important;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #424242;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #424242; }
+
+section.py-5 a img {
+	filter: grayscale(100%); }
+	section.py-5 a:hover img {
+	filter: grayscale(0%);
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #B40404; }
+	section.py-5 a.clase-actual img{
+	filter: grayscale(0%);
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #B40404;
 }
+
+
+section.web {
+	background-color:#FE642E;
+	padding: 30px 0px; }
+	section.web .margin-8{
+	margin-bottom: 8px;
+	margin-top: 8px; }
+	  section.web h6.sub-heading{
+	  font-size: 16px;
+	  margin-top: 8px;
+	  margin-bottom: 8px;
+   	  text-transform: uppercase;
+   	  text-align: center;
+   	  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   	  color: #FFFFFF;
+   	  font-weight: 800; }
+    	section.web h6.sub-heading a {
+		font-size: 15px;
+    	text-transform: none;
+    	text-align: center;
+    	font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    	color: #FFFFFF; }
+
+
+
+
+
+	

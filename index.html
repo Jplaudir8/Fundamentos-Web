@@ -10,7 +10,7 @@
 
 	<!-- Bootstrap Núcleo del CSS -->
 	<link rel="stylesheet" type="text/css" href="recursos/bootstrap/css/bootstrap.css">
-
+  
 	<!-- Icono de Favoritos o Página -->
 	<link rel="shortcut icon" type="image/png" href="img/LogoAR-pagina.png">
   
@@ -22,6 +22,14 @@
 	
 	<!-- Estilos para la Página Principal-->
 	<link rel="stylesheet" type="text/css" href="css/main.css" >
+  
+  <!-- Hotjar for http://autorace.azurewebsites.net/ -->
+  <script src="js/hotjar.js"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108905808-1"></script>
+  <script src="js/analytics.js"></script>
+  
 </head>
 <body>
 	<!-- Barra de Navegación -->
@@ -38,9 +46,9 @@
   					<div class="collapse navbar-collapse" id="navbarResponsive">
           				<ul class="navbar-nav ml-auto mr-auto">
            	 				<li class="nav-item">
-             					 <a class="nav-link" href="#">LA EMPRESA</a>
+             					 <a class="nav-link" href="nosotros.html">LA EMPRESA</a>
             				</li>
-            				<li class="nav-item">
+            				<li class="nav-item dropdown">
               					<a class="nav-link" href="vehiculos.html">VEHÍCULOS</a>
             				</li>
             				<li class="nav-item">
@@ -60,9 +68,10 @@
       			</div>
 			</nav>
 
+
   <!-- Encabezado-Sliders -->
 
-    <header>
+    <header class="head">
             <div id="carousel-1" class="carousel slide" data-ride="carousel">
               <!-- Indicadores -->
               <ol class="carousel-indicators">
@@ -76,7 +85,7 @@
 
                 <!-- Slide 1 -->
                   <div class="carousel-item active">
-                    <img src="img/slogan1.png" alt="slogan1">
+                    <img src="img/index-slogan/slogan1.png" alt="slogan1">
                     <div class="carousel-caption d-none d-md-block">
                       <div class="intro-text">
                           <a class="btn btn-info" href="vehiculos.html" role="button">Ver más</a>
@@ -86,12 +95,12 @@
 
                 <!-- Slide 2 -->
                   <div class="carousel-item">
-                    <img src="img/slogan2.png" alt="slogan2">
+                    <img src="img/index-slogan/slogan2.png" alt="slogan2">
                   </div>
                 
                   <!-- Slide 3 -->
                   <div class="carousel-item">
-                    <img src="img/slogan3.png" alt="slogan3">
+                    <img src="img/index-slogan/slogan3.png" alt="slogan3">
                   </div>
               </div>
 
@@ -186,7 +195,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/toyota-carro.png" alt="Toyota">
+              <img class="img-fluid" src="img/index-carros/toyota-carro.png" alt="Toyota">
             </a>
             <div class="marca-caption">
               <h5>Toyota</h5>
@@ -199,7 +208,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/hyundai-carro.png" alt="Hyundai">
+              <img class="img-fluid" src="img/index-carros/hyundai-carro.png" alt="Hyundai">
             </a>
             <div class="marca-caption">
               <h5>Hyundai</h5>
@@ -212,7 +221,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/kia-carro.png" alt="Kia">
+              <img class="img-fluid" src="img/index-carros/kia-carro.png" alt="Kia">
             </a>
             <div class="marca-caption">
               <h5>Kia</h5>
@@ -228,9 +237,11 @@
 <!-- Sección Contacto-->
 
 <section id="contacto">
-      <div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <h2 class="section-heading margin">
               <span class="fa-stack fa-size">
                 <i class="fa fa-circle fa-stack-2x color-circle"></i>
@@ -240,22 +251,11 @@
               <span class="span-1">¡Comuníquese</span> con nosotros<span class="span-1">!</span>
             </h2>
           </div>
-          <div class="col-lg-6">
-            <h2 class="section-heading margin">
-              <span class="fa-stack fa-size">
-                <i class="fa fa-circle fa-stack-2x color-circle"></i>
-                <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
-              </span>
-
-              <span class="span-1">¡Encuéntranos</span> aquí<span class="span-1">!</span>
-            </h2>
-          </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <form id="contactForm" name="enviarMensaje">
-              <div class="row">
-                <div class="col-md-6">
+        
+        <form id="contactForm" name="enviarMensaje">
+          <div class="row">
+            <div class="col-md-12">
                   <div class="form-group">
                     <select class="form-control" id="preferencia" required>
                       <option value="">¿Cuál es tu preferencia?</option>
@@ -275,24 +275,42 @@
                   <div class="form-group">
                     <input class="form-control" id="correo" type="email" placeholder="Correo *" required>
                   </div>
-                </div>
-                 <div class="col-md-6">
-                  <div class="form-group">
-                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.505702728953!2d-76.97898837081954!3d-12.041950499466914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6771cf55b05%3A0x7ec1c124bd3ef819!2sLuis+de+la+Puente+500%2C+Cercado+de+Lima+15008!5e0!3m2!1ses!2spe!4v1507847200296" allowfullscreen>
-                    </iframe>
-                  </div>
-                </div>
-               
-                <div class="clearfix"></div>
-                <div class="col-lg-12">
-                  <input id="enviar" class="btn btn-success btn-lg" type="submit" value="Enviar">
-                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="clearfix"></div>
+              <div class="col-lg-12">
+                <input id="enviar" class="btn btn-success btn-lg" type="submit" value="Enviar"><br><br>
               </div>
-            </form>
+          </div>
+        </form>
+      </div>
+      
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-heading margin">
+              <span class="fa-stack fa-size">
+                <i class="fa fa-circle fa-stack-2x color-circle"></i>
+                <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
+              </span>
+              
+              <span class="span-1">¡Encuéntranos</span> aquí<span class="span-1">!</span>
+            </h2>
+          </div>
+
+          <div class="col-lg-12">
+            
+              <div class="form-group">
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.505702728953!2d-76.97898837081954!3d-12.041950499466914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6771cf55b05%3A0x7ec1c124bd3ef819!2sLuis+de+la+Puente+500%2C+Cercado+de+Lima+15008!5e0!3m2!1ses!2spe!4v1507847200296" allowfullscreen>
+                </iframe>  
+              </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>  
+  </div>
+</section>
 	
   <!-- Pie de Página -->
 
@@ -349,12 +367,8 @@
 	<script src="recursos/popper/popper.min.js"></script>
 	<script src="recursos/bootstrap/js/bootstrap.min.js"></script>
 
-	<!-- Plugin JavaScript -->
-  <script src="recursos/jquery-easing/jquery.easing.min.js"></script>
-
   <!-- Scripts personalizado -->
   <script src="js/main.js"></script>
-
 
 </body>
 </html>

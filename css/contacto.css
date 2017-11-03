@@ -1,43 +1,41 @@
 body {
   background-image: url(../img/canvas-fibra1.png);
-  background-repeat: repeat;
-}
+  background-repeat: repeat; }
 
 img {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 .text-muted {
   color: #0B2F3A !important;
-  text-align: center;
-}
+  text-align: center; }
 
-section#contacto form fieldset#radio {
-  color: white !important; 
-  text-align: justify; }
+section#contacto form fieldset {
+  margin-bottom: 30px;
+  }
+  section#contacto form fieldset span.validacion {
+  color: #B43104;
+  font-weight: bold; }
+  section#contacto form fieldset#radio {
+    color: white !important;
+    text-align: justify; }
 
-#contacto input,textarea,select,button {
-  margin-bottom: 35px;
+#contacto input, textarea, select, button {
+  margin-bottom: 10px;
   border: 0px;
-  border-radius: 3px;
-}
+  border-radius: 3px; }
 
 #contacto input {
-  width: 100%;
-}
+  width: 100%; }
 
 #contacto label {
   width: 100%;
-}
+  color: white; }
 
 #contacto textarea {
-  width: 100%;
-}
+  width: 100%; }
 
-#radio input{
-  width: 3%;
-}
+#radio input {
+  width: 3%; }
 
-#radio label{
-  width: 50%;
-}
+#radio label {
+  width: 50%; }
